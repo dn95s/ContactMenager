@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" 
+		th:replace="normal/base::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title th:text="${title}">Dashboard</title>
+</head>
+<body>
+	
+	<section>
+	<div class="container">
+		<div class="card">
+			<div class="card-body my-5">	
+			
+			<div class="container text-center">
+			<img src="/img/default.png" style="height: 230px; width:230px;" class="profilePhoto" alt="Zdjecie profilowe" />
+			</div>
+			
+			<h1 class="text-center mt-4 text-secondary font-italic font-weight-light">
+				Zacznij gromadzić kontakty...
+			</h1>
+			
+			<a id="add" th:href="@{/user/add-contact}" class="btn btn-primary btn-block text-uppercase mt-5">Dodaj nowy kontakt</a>	
+			
+		</div>
+		</div>
+	</div>
+	</section>
+	
+</body>
+</html>

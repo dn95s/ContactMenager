@@ -1,0 +1,137 @@
+body{
+	background: rgb(200, 200, 200);
+}
+
+.bg-primary{
+	background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(92,9,121,1) 35%); 
+	box-shadow: 0 0 10px black
+}
+
+.banner, .register, .login{
+	width: 100%;
+	height: 93vh;
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.8)) ,url(../img/banner2.jpg);
+	background-size:cover;
+}
+
+.banner{
+	color: #FFFFFF;
+}
+
+.my-card{
+	padding: 30px;
+	background: #FFFFFF;
+	border-radius: 5px;
+	box-shadow: 0 0 10px black;
+}
+
+.btn-register{
+	background: purple;
+	color: #FFFFFF;
+}
+
+.btn-register:hover{
+	background: #510051;
+	color: #FFFFFF;
+}
+
+.btn-start{
+	border-color: #800080;
+	background: transparent;
+	border: 2px solid purple;
+}
+
+.btn-start:hover{
+	border-color: purple;
+	background: #15264a;
+	border: 4px solid purple;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+		width: 80% !important;
+		background: #FFFFFF;
+		height: 100vh;
+		position: fixed;
+		padding-top: 20px;
+  }.content{
+		margin-left: 0% !important;
+}}
+
+.sidebar{
+	width: 18%;
+	background: #FFFFFF;
+	height: 100%;
+	position: fixed;
+	padding-top: 45px;
+	z-index: 100;
+}
+
+.sidebar a{
+	display: block;
+	width: 100%;
+	padding: 10px 45px;
+	text-decoration: none;
+	color: gray;
+}
+
+.sidebar a:hover{
+	background: rgb(200, 200, 200);
+}
+
+.sidebar .divider{
+	height: .5px;
+	width: 100%;
+	background: rgb(200, 200, 200);
+}
+
+
+.content{
+	margin-left: 20%;
+}
+
+.sidebar .crossBtn{
+	position: absolute;
+	right: 35px;
+	top: 0;
+	font-size: 36px;
+	cursor: pointer;
+}
+
+.content .fas{
+	cursor: pointer;
+}
+
+.profilePhoto{
+	width: 35px;
+	height: 35px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+a#add{
+	background:#800080;
+	border: none;
+}
+
+.search-container{
+	position: relative;
+}
+
+.search-result{
+	position: absolute;
+	background: white;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid gray;
+	display: none;
+}
+
+
+
+
+
+
+
